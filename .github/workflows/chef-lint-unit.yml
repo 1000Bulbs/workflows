@@ -3,6 +3,10 @@ name: Lint & Unit test
 
 'on':
   workflow_call:
+    secrets:
+      CI_USER_TOKEN:
+        description: 'The CI_USER_TOKEN is stored in organization secrets'
+        required: true
 
 jobs:
   rspec:
