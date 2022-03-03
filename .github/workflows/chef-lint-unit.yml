@@ -6,7 +6,7 @@ name: Lint & Unit test
     secrets:
       CI_USER_TOKEN:
         description: 'The CI_USER_TOKEN is stored in organization secrets'
-        required: true
+        required: false
 
 jobs:
   rspec:
